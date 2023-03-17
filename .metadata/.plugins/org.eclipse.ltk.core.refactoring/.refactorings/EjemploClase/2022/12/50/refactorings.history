@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ejercicioClase.Racional&apos; to &apos;Fraccion&apos;&#x0D;&#x0A;- Original project: &apos;EjemploClase&apos;&#x0D;&#x0A;- Original element: &apos;ejercicioClase.Racional&apos;&#x0D;&#x0A;- Renamed element: &apos;ejercicioClase.Fraccion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Racional&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ejercicioClase{Racional.java[Racional" matchStrategy="1" name="Fraccion" qualified="false" references="true" similarDeclarations="false" stamp="1671106680072" textual="false" version="1.0"/>
+</session>

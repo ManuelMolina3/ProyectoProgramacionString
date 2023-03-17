@@ -1,0 +1,70 @@
+package ejemploGlobal;
+
+
+public class GestionDeDatos {
+	private String usr;
+	private StringBuffer contra;
+	private String correo;
+	
+	public GestionDeDatos(String usr, StringBuffer contra, String correo) {
+		super();
+		this.usr = usr;
+		this.contra = contra;
+		this.correo = correo;
+	}
+
+	public String getUsr() {
+		return usr;
+	}
+
+	public void setUsr(String usr) {
+		this.usr = usr;
+	}
+
+	public StringBuffer getContra() {
+		return contra;
+	}
+
+	public void setContra(StringBuffer contra) {
+		this.contra = contra;
+	}
+
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+
+	@Override
+	public String toString() {
+		return "GestionDeDatos [usr=" + usr + ", contra=" + contra + ", correo=" + correo + "]";
+	}
+	
+	public void generarCorreo(String nombre, String apellido, String anio) {
+		String implement= "@gmail.com";
+		String nom= nombre.substring(0, 2);
+		String ape=apellido.substring(0, 2);
+		String prin =nom.concat(ape);
+		String medi = prin.concat(anio);
+		correo = medi.concat(implement);
+		System.out.println(correo);
+	}
+	public void generarContra (String nombre, String apellido, String mascota) {
+		StringBuffer cont = new StringBuffer();
+		String nom= nombre.substring(0, 2);
+		String ape=apellido.substring(0, 2);
+		String prin =nom.concat(ape);
+		String con= prin.concat(mascota);
+		cont.append(con);
+		System.out.println(cont.reverse());
+	}
+	public void generarUsr (String nombre, String apellido, String segundoApe) {
+		String prim= segundoApe.concat(nombre);
+		String secu= prim.concat(apellido);
+		usr= secu.replace("a", "x");
+		System.out.println(usr);
+		
+	}
+}

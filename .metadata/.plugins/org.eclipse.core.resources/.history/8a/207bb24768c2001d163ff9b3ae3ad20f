@@ -1,0 +1,15 @@
+package ejemploStringBuffer;
+
+public class Ppal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 StringBuffer sb= new StringBuffer();
+		 
+		 sb.append("Paco");
+		 sb.append(false);
+		 sb.append(23.5);
+		 System.out.println(sb.toString());
+	}
+
+}

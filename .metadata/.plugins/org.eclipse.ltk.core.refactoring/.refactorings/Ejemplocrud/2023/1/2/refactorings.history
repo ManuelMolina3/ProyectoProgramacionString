@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;ejemplo.CrudProducto.getLista()&apos;&#x0D;&#x0A;- Original project: &apos;Ejemplocrud&apos;&#x0D;&#x0A;- Destination element: &apos;ejemplo.CrudProducto.getLista()&apos;&#x0D;&#x0A;- Original element: &apos;ejemplo.CrudProducto.setLista(...)&apos;" description="Copy method" destination="/src&lt;ejemplo{CrudProducto.java[CrudProducto~getLista" element1="/src&lt;ejemplo{CrudProducto.java[CrudProducto~setLista~\[QProducto;" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1673525210071" version="1.0"/>
+</session>

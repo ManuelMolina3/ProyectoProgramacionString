@@ -1,0 +1,7 @@
+package ejemploGlobal;
+
+public class Contraseña {
+	
+	private int id;
+	private StringBuffer contra;
+}

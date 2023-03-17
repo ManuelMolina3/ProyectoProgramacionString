@@ -1,0 +1,45 @@
+package ejemplos;
+
+public class Clase {
+	private String nombreAlumno;
+	private String apellidoAlumno;
+	private int edad;
+	private boolean programador;
+	public Clase(String nombreAlumno, String apellidoAlumno, int edad, boolean programador) {
+		super();
+		this.nombreAlumno = nombreAlumno;
+		this.apellidoAlumno = apellidoAlumno;
+		this.edad = edad;
+		this.programador = programador;
+	}
+	public String getNombreAlumno() {
+		return nombreAlumno;
+	}
+	public void setNombreAlumno(String nombreAlumno) {
+		this.nombreAlumno = nombreAlumno;
+	}
+	public String getApellidoAlumno() {
+		return apellidoAlumno;
+	}
+	public void setApellidoAlumno(String apellidoAlumno) {
+		this.apellidoAlumno = apellidoAlumno;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	public boolean isProgramador() {
+		return programador;
+	}
+	public void setProgramador(boolean programador) {
+		this.programador = programador;
+	}
+	@Override
+	public String toString() {
+		return "Clase [nombreAlumno=" + nombreAlumno + ", apellidoAlumno=" + apellidoAlumno + ", edad=" + edad
+				+ ", programador=" + programador + "]";
+	}
+	
+}

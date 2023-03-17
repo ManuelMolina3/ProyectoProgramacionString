@@ -1,0 +1,36 @@
+package ejemploGlobal;
+
+public class Correo {
+	
+	private int id;
+	private StringBuffer correo;
+	
+	public Correo(int id, StringBuffer correo) {
+		super();
+		this.id = id;
+		this.correo = correo;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public StringBuffer getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(StringBuffer correo) {
+		this.correo = correo;
+	}
+
+	@Override
+	public String toString() {
+		return "Correo [id=" + id + ", correo=" + correo + "]";
+	}
+	
+	
+}

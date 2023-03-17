@@ -1,0 +1,20 @@
+package ejemplos;
+
+public class GestionClases {
+	public void eliminarAlumno (Clase c) {
+		c.setAlta(false);
+	}
+	public void aniadirAlumno (Clase c) {
+		c.setAlta(true);
+	}
+	public void cambiarNombre (Clase c, String nuevoNombre) {
+		c.setNombreAlumno(nuevoNombre);
+	}
+	public void cambiarApellido (Clase c, String nuevoApellido) {
+		c.setApellidoAlumno(nuevoApellido);
+	}
+	public void cambiarEdad (Clase c, int nuevaEdad) {
+		c.setEdad(nuevaEdad);
+	}
+	
+}

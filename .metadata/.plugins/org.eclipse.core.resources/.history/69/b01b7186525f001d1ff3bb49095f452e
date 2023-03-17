@@ -1,0 +1,80 @@
+package ejercicio5;
+
+import java.util.Random;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*5. Crear un programa que realice lo siguiente:
+			• Solicitar al usuario que introduzca por teclado el tamaño del array.
+			• Declarar y definir el array de enteros.
+			• Rellenar el array mediante números aleatorios entre los dos valores que diga el usuario.
+			• Mostrar por pantalla la suma de todos los elementos.
+			• Mostrar el mayor y el menor guardados en el array.
+			• Modificar un valor elegido por el usuario.*/
+		int tam=0, desde=0,hasta=0, suma=0, mayor=0, menor=0, respu=0, num3=0, num4=0;
+		Random num= new Random (System.nanoTime());
+		int num2[];
+		System.out.println("Bienvenido al programa que te dara el numero de aleatorios que tu quieras, su suma y el mayoyr y el menor número");
+		do {
+		System.out.println("por favor digame que cantidad de números quiere generar");
+		tam=Leer.datoInt();
+		num2=new int[tam];
+		System.out.println("Introduzca desde que número quiere partir");
+		desde=Leer.datoInt();
+		System.out.println("introduzca hasta que número quiere llegar");
+		hasta=Leer.datoInt();
+		for(int i=0; i<num2.length; i++) {
+			num2[i]=num.nextInt(hasta-desde+1)+desde;
+		}
+		for(int i=0; i<num2.length; i++) {
+			System.out.println(num2[i]);
+		}
+		
+		for (int i = 0; i < num2.length; i++) {
+			suma+=num2[i];
+			
+		}
+		System.out.println("La suma de todos estos números aleatorios es: "+suma);
+		menor=num2[0];
+		mayor=num2[0];
+		for (int i = 0; i < num2.length; i++) {
+			if(menor>num2[i]) {
+				menor=num2[i];
+			}
+			if(mayor<num2[i]) {
+				mayor=num2[i];
+			}
+		}
+			System.out.println("\nEl mayor número es:"+mayor);
+			System.out.println("\nEl menor número es:"+menor);
+			
+			System.out.println("¿Quieres cambiar algún número?");
+			System.out.println("Pulse 1 para cambiar\nPulse 2 para cerrar el programa\n");
+			respu=Leer.datoInt();
+			switch(respu) {
+			case 1:
+				System.out.println("¿Qué número quiere cambiar?");
+				num3=Leer.datoInt();
+				System.out.println("¿Qué número quiere poner?");
+				num4=Leer.datoInt();
+				num2[num3-1]=num4;
+				for (int i = 0; i < num2.length; i++) {
+					System.out.println(num2[i]);
+				}
+				break;
+			case 2:
+				System.out.println("Saliendo");
+			break;	
+			default:
+				System.out.println("Opción no valida");
+			
+			}
+		}while(respu==2);
+		System.out.println("saliendo");
+	}
+
+}

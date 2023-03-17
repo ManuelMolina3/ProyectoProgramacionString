@@ -1,0 +1,36 @@
+package ejemplos;
+
+public class GestionClases {
+	private String profesor;
+	private String nombreColegio;
+	public GestionClases(String profesor, String nombreColegio) {
+		super();
+		this.profesor = profesor;
+		this.nombreColegio = nombreColegio;
+	}
+	public String getProfesor() {
+		return profesor;
+	}
+	public void setProfesor(String profesor) {
+		this.profesor = profesor;
+	}
+	public String getNombreColegio() {
+		return nombreColegio;
+	}
+	public void setNombreColegio(String nombreColegio) {
+		this.nombreColegio = nombreColegio;
+	}
+	@Override
+	public String toString() {
+		return "GestionClases [profesor=" + profesor + ", nombreColegio=" + nombreColegio + "]";
+	}
+	public void eliminarAlumno (Clase c) {
+		c.setAlta(false);
+	}
+	public void aniadirAlumno (Clase c) {
+		c.setAlta(true);
+	}
+	public void cambiarNombre (Clase c, String nuevoNombre) {
+		c.setNombreAlumno(nuevoNombre);
+	}
+}

@@ -1,0 +1,23 @@
+package ejemploStringBuffer;
+
+public class Ppal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 StringBuffer sb= new StringBuffer();
+		 StringBuffer sb1= new StringBuffer();
+		 StringBuffer sb2= new StringBuffer();
+		 StringBuffer sb3= new StringBuffer();
+		 StringBuffer sb4= new StringBuffer();
+		 StringBuffer sb5= new StringBuffer();
+		 StringBuffer sb6= new StringBuffer();
+		 
+		 sb.append("Pepe");
+		 System.out.println(sb);
+		 /*StringBuffer.appends(tipo de variable que quieras introducir) 
+		  * este metodo es para añadir distintos tipo de datos dentro del StringBuffer*/
+		 sb.capacity();
+		 
+	}
+
+}

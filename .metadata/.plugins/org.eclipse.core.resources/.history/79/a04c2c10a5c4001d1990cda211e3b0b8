@@ -1,0 +1,7 @@
+package ejemploGlobal;
+
+public class Contrasenia {
+	
+	private int id;
+	private StringBuffer contra;
+}

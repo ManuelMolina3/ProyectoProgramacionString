@@ -1,0 +1,24 @@
+package ejercicio4;
+
+import java.util.Random;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*4. Rellenar un array unidimensional de 10 posiciones con números aleatorios entre 1 y 99 y
+		mostrar el número guardado en un lugar que indique el usuario por teclado.*/
+		
+		int tam=10, hasta=99, desde=1;
+		Random num2= new Random(System.nanoTime());
+		int[] num;
+		num=new int[tam];
+		
+		for(int i=0; i<num.length; i++) {
+			num[i]=num2.nextInt((hasta-desde+1)+desde);
+			
+			
+		}
+	}
+
+}

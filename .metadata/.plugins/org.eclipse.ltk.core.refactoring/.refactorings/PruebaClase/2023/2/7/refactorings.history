@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;string&apos; in &apos;prueba.Frequency.main(...)&apos; to &apos;cadena&apos;&#x0D;&#x0A;- Original project: &apos;PruebaClase&apos;&#x0D;&#x0A;- Original element: &apos;prueba.Frequency.main(String[]).string&apos;&#x0D;&#x0A;- Renamed element: &apos;string&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;string&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;prueba{Frequency.java[Frequency~main~\[QString;@string!287!320!292!297!\[C!0!false" name="cadena" references="true" stamp="1676278784871" version="1.0"/>
+</session>

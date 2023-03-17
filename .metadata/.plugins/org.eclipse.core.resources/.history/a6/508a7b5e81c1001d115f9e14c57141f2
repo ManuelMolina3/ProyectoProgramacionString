@@ -1,0 +1,25 @@
+package primeraexcepcion;
+
+import utilidades.Leer;
+
+public class Ppal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num= 10; double deno=0;
+		double resultado;
+		
+		try {
+			num=Leer.datoInt();
+			deno=Leer.datoDouble();
+			resultado=num/deno;
+			System.out.println(resultado);
+		}catch (Exception e) {
+			System.err.println("¡Estas haciendolo mal!");
+		}
+		
+		
+		
+	}
+
+}
